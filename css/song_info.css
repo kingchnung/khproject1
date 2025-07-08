@@ -1,0 +1,100 @@
+main{
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+}
+h2{
+    color: rgb(41, 40, 40);
+    font-size: 24px;
+    margin-top: 20px;
+    border-top: 1px solid rgb(148, 144, 144);
+}
+.song{
+    display: flex;
+    gap: 30px;
+    border: 1px solid black;
+}
+.album-image{
+    width: 250px;
+    border-radius: 5px;
+}
+.info-area{
+    flex: 1;
+}
+.song-info{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.song-title{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: rgb(41, 40, 40);
+}
+.singer{
+    color: rgb(9, 226, 9);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.list1 {
+    color: gray;
+}
+.list1 span{
+    display: inline-block;
+    width: 60px;
+    color: gray;
+}
+.list2 li {
+    display: inline;
+}
+.list3 {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.list li{
+    display: flex;
+    align-items: center;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover {
+    text-decoration: underline;
+}
+button.like::before{
+    content: '♡';
+    margin-right: 5px;
+    font-size: 20px;
+    color: rgb(9, 226, 9);
+    padding: 5px;
+}
+button.like{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.list3 .like-num{
+    display: flex;
+}
+.가사{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
