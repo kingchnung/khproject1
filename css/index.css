@@ -50,8 +50,7 @@
 .themaAlbum_list li{
     list-style-type: none;
     margin: 15px;
-    display: flex;
-    
+    display: flex;  
 }
 
 
@@ -80,4 +79,147 @@ vertical-align: middle;
     font-size: 14px;
     display: block;
     color: white; 
+}
+
+
+/* #second_section{
+   box-sizing: border-box;
+    margin: 80px 0px;
+    border: 1px solid #3eada4;
+    padding: 10px; 
+}
+
+  
+}
+#Album_chart{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid #3eada4;
+}
+
+
+#recommend-album{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+    width:750px;
+    border: 1px solid black;
+}
+
+.Album_chart_header{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#recommend-album div a{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 5px;
+    display: flex;
+    width: 230px;
+    height:230px;
+    border: 1px solid rgba(116, 113, 113, 0.37);
+    z-index: 1;
+}
+
+#top100-list{
+    display: flex;
+    box-sizing: border-box;
+    margin:10px;
+    width:330px;
+    border: 1px solid rgb(255, 46, 46);
+} */
+
+#second_section {  /* 1 */
+    display:flex;
+    margin: 80px 0px;
+    border: 1px solid #3eada4;
+    padding: 10px; 
+    width:100%
+}
+
+#Album_chart { /* 2 */
+    box-sizing: border-box;
+    width: 750px;
+    border: 1px solid #67ad3e;
+    
+}
+
+.Album_chart_header { /* 3-1 */
+    border: 1px solid #233ab8;
+    height:50px;
+    font-size: 20px;
+    font-weight: 700;
+    align-content: center;
+    padding-left: 15px;
+    
+}
+
+
+#recommend-album { /* 3-2 */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+}
+
+.content a img{ /* 4 */
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 230px;
+    height: 230px;
+    border: 1px solid #77777754;
+    margin-top: 5px;
+}
+
+.content img:hover{
+    filter: brightness(0.3);
+}
+
+#top100-list {
+    box-sizing: border-box;
+    display: block;
+    width: 330px;
+    border: 1px solid #ad3e3e;
+}
+
+#rank_list{
+    list-style-type: none;
+   
+}
+
+
+#rank_list li{
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #77777754;
+    padding:px 0;
+    
+}
+
+.rank {
+    width: 30px;
+    font-weight: 700;
+    text-align: right;
+    color: #1db954; /* 초록 계열 */
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.rank_info {
+    display: block;
+    flex-direction: column;
+}
+
+
+.rank_info_title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.rank_info_artist {
+    font-size: 14px;
+    color: #555;
 }

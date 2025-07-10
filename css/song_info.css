@@ -18,12 +18,16 @@ h2{
     display: flex;
     gap: 30px;
     border: 1px solid black;
+    
 }
-.album-image{
+.album-image {
     border-radius: 5px;
     height: auto;
-    
+    width: 250px;
+}
 
+.album-image img{
+    width: fit-content;
 }
 .info-area{
     flex: 1;
