@@ -5,6 +5,7 @@
 }
 
 #themaAlbum{
+    box-sizing: border-box;
     display: flex;
     width:100%;
     height:300px;
@@ -23,9 +24,9 @@
     color: white;
 }
 
-.play_btn{
-    margin-top: 80px;
-    background-image: url(../image/play-button.png);
+#themaAlbum .play_btn{
+    margin-top:  60px;
+    background-image: url(../image/index/play-button.png);
     background-size: 100%;
     width: 45px;
     height: 45px;
@@ -34,11 +35,12 @@
     border-radius: 100%;
 }
 
-.play_btn a{
+#themaAlbum .play_btn a{
     color:transparent;
 }
-.play_btn:hover{
-     background-image: url(../image/play_button2.png);
+
+#themaAlbum .play_btn:hover{
+     background-image: url(../image/index/play_button2.png);
 }
 
 
@@ -47,15 +49,48 @@
     width: 400px;
     display: inline-block;   
 }
+
 .themaAlbum_list li{
     list-style-type: none;
     margin: 15px;
     display: flex;  
 }
 
+.content {
+    position: relative;
+    width: 230px;
+    height: 230px;
+}
+
+.content a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.3s;
+}
 
 .themaAlbum_list li:hover{
     background-color: rgba(255, 255, 255, 0.144);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    opacity:0;
+    text-align: center;  
+}
+
+.overlay-text::first-line {
+    font-size: 20px;
+}
+
+.content:hover .overlay-text {
+    opacity: 1;
 }
 
 .coverImage {
@@ -82,79 +117,26 @@ vertical-align: middle;
 }
 
 
-/* #second_section{
-   box-sizing: border-box;
-    margin: 80px 0px;
-    border: 1px solid #3eada4;
-    padding: 10px; 
-}
-
-  
-}
-#Album_chart{
-    display: flex;
-    box-sizing: border-box;
-    margin-top: 10px;
-    border: 1px solid #3eada4;
-}
-
-
-#recommend-album{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;  
-    justify-content: space-around;
-    width:750px;
-    border: 1px solid black;
-}
-
-.Album_chart_header{
-    font-size: 1.2em;
-    font-weight: 800;
-}
-
-#recommend-album div a{
-    box-sizing: border-box;
-    list-style-type: none;
-    margin: 5px;
-    display: flex;
-    width: 230px;
-    height:230px;
-    border: 1px solid rgba(116, 113, 113, 0.37);
-    z-index: 1;
-}
-
-#top100-list{
-    display: flex;
-    box-sizing: border-box;
-    margin:10px;
-    width:330px;
-    border: 1px solid rgb(255, 46, 46);
-} */
 
 #second_section {  /* 1 */
+    box-sizing: border-box;
     display:flex;
-    margin: 80px 0px;
-    border: 1px solid #3eada4;
+    margin: 40px auto;
     padding: 10px; 
-    width:100%
+    width:100%;
 }
 
 #Album_chart { /* 2 */
     box-sizing: border-box;
     width: 750px;
-    border: 1px solid #67ad3e;
-    
 }
 
 .Album_chart_header { /* 3-1 */
-    border: 1px solid #233ab8;
-    height:50px;
-    font-size: 20px;
+    height:40px;
+    font-size: 18px;
     font-weight: 700;
     align-content: center;
     padding-left: 15px;
-    
 }
 
 
@@ -182,44 +164,105 @@ vertical-align: middle;
     box-sizing: border-box;
     display: block;
     width: 330px;
-    border: 1px solid #ad3e3e;
 }
 
 #rank_list{
     list-style-type: none;
-   
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #3eada4;
 }
 
 
 #rank_list li{
+    box-sizing: border-box;
     display:flex;
     align-items: center;
     border-bottom: 1px solid #77777754;
-    padding:px 0;
+    padding: 8px;
+    width: 300px;
+    margin: 0;
     
 }
 
-.rank {
+#rank_list li:hover {
+    background-color: #7777771c;
+}
+
+#rank_list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+div.rank {
+    box-sizing: border-box;
     width: 30px;
     font-weight: 700;
-    text-align: right;
-    color: #1db954; /* 초록 계열 */
-    padding-right: 10px;
+    color: #1db954;
     font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 10px;
 }
 
 .rank_info {
-    display: block;
-    flex-direction: column;
+    flex-grow: 1;
+    display: flex; 
+    gap: 40px;
 }
 
 
 .rank_info_title {
-    font-weight: bold;
+    box-sizing: border-box;
+    font-weight: 500;
     font-size: 16px;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 10px;
 }
 
+
+
+
 .rank_info_artist {
-    font-size: 14px;
+    box-sizing: border-box;
+    font-size: 12px;
     color: #555;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+#rank_list .play_btn {
+    margin:10px;
+    background-color:#c7c7c73a;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.more_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more{
+    margin-right:20px;
+    font-size: 14px;
+    color:#555
 }
