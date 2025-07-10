@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>곡 정보</title>
-    <link rel="stylesheet" href="../css/song_info/info.css">
+    <link rel="stylesheet" href="../css/song_info/song_info.css">
 </head>
 
 <body>
-    <header>상단 베너~~~~</header>
+    <header>상단 베너</header>
     <main>
-                <h2>곡 정보</h2>
+        <section class="song-info">
+            <h2>곡 정보</h2>
             <div class="song">
                 <div class="album-image">
-                    <img class="image" src="../image/info/앨범이미지.jpg" alt="앨범 이미지" title="앨범 이미지" />
+                    <img src="../image/info/앨범이미지.jpg" alt="앨범 이미지" title="앨범 이미지" />
                 </div>
                 <div class="info-area">
                     <p class="song-title">잘 지내</p>
@@ -43,10 +44,11 @@
                     </ul>
                 </div>
             </div>
+        </section>
         <section>
             <br />
-            <p>가사</p>
-            <div class="가사">
+            <h2 class="가사">가사</h2>
+            <div class="노래가사">
                 <p>뭐랄까,</p>
                 <p>구름이 걷히고 운이 좋으면</p>
                 <p>투명한 조각의 무지개처럼</p>
@@ -82,6 +84,32 @@
                 <p>모쪼록 난 좋아</p>
                 <p>너도 잘 지냈으면 해</p>
             </div>
+        </section>
+        <section class="writer">
+            <h2>작사 / 작곡</h2>
+            <ul class="writer-list">
+                <li class="writer-item">
+                    <img src="../image/info/profile.jpg">
+                    <div class="writer-text">
+                        <span class="name">윤하(YOUNHA)</span>
+                        <span class="writer">작사</span>
+                    </div>
+                </li>
+                <li class="writer-item">
+                    <img src="../image/info/profile.jpg">
+                    <div class="writer-text">
+                        <span class="name">윤하(YOUNHA)</span>
+                        <span class="writer">작사</span>
+                    </div>
+                </li>
+                <li class="writer-item">
+                    <img src="../image/info/profile.jpg">
+                    <div class="writer-text">
+                        <span class="name">윤하(YOUNHA)</span>
+                        <span class="writer">작사</span>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
 </body>

@@ -10,6 +10,7 @@ h2 {
 }
 div.song{
     border: 1px solid black;
+    height: 225px;
 }
 div.album-image{
     border: 1px solid black;
@@ -19,4 +20,7 @@ div.album-image{
 
 div.image{
     width: fit-content;
+}
+div.song p{
+    display: flex;
 }
