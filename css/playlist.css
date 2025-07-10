@@ -1,0 +1,16 @@
+.menu li {
+    list-style: none;
+    float : left;
+    margin: 20px 30px;
+}
+
+.search {
+    position: absolute;
+    top: 100px;
+    left: 2000px;
+}
+
+.playlist li {
+    list-style: none;
+    float : left;
+}
