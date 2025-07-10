@@ -5,6 +5,7 @@
 }
 
 #themaAlbum{
+    box-sizing: border-box;
     display: flex;
     width:100%;
     height:300px;
@@ -23,9 +24,9 @@
     color: white;
 }
 
-.play_btn{
-    margin-top: 80px;
-    background-image: url(../image/play-button.png);
+#themaAlbum .play_btn{
+    margin-top:  60px;
+    background-image: url(../image/index/play-button.png);
     background-size: 100%;
     width: 45px;
     height: 45px;
@@ -34,11 +35,12 @@
     border-radius: 100%;
 }
 
-.play_btn a{
+#themaAlbum .play_btn a{
     color:transparent;
 }
-.play_btn:hover{
-     background-image: url(../image/play_button2.png);
+
+#themaAlbum .play_btn:hover{
+     background-image: url(../image/index/play_button2.png);
 }
 
 
@@ -47,16 +49,48 @@
     width: 400px;
     display: inline-block;   
 }
+
 .themaAlbum_list li{
     list-style-type: none;
     margin: 15px;
-    display: flex;
-    
+    display: flex;  
 }
 
+.content {
+    position: relative;
+    width: 230px;
+    height: 230px;
+}
+
+.content a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: filter 0.3s;
+}
 
 .themaAlbum_list li:hover{
     background-color: rgba(255, 255, 255, 0.144);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    opacity:0;
+    text-align: center;  
+}
+
+.overlay-text::first-line {
+    font-size: 20px;
+}
+
+.content:hover .overlay-text {
+    opacity: 1;
 }
 
 .coverImage {
@@ -80,4 +114,155 @@ vertical-align: middle;
     font-size: 14px;
     display: block;
     color: white; 
+}
+
+
+
+#second_section {  /* 1 */
+    box-sizing: border-box;
+    display:flex;
+    margin: 40px auto;
+    padding: 10px; 
+    width:100%;
+}
+
+#Album_chart { /* 2 */
+    box-sizing: border-box;
+    width: 750px;
+}
+
+.Album_chart_header { /* 3-1 */
+    height:40px;
+    font-size: 18px;
+    font-weight: 700;
+    align-content: center;
+    padding-left: 15px;
+}
+
+
+#recommend-album { /* 3-2 */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+}
+
+.content a img{ /* 4 */
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 230px;
+    height: 230px;
+    border: 1px solid #77777754;
+    margin-top: 5px;
+}
+
+.content img:hover{
+    filter: brightness(0.3);
+}
+
+#top100-list {
+    box-sizing: border-box;
+    display: block;
+    width: 330px;
+}
+
+#rank_list{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #3eada4;
+}
+
+
+#rank_list li{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #77777754;
+    padding: 8px;
+    width: 300px;
+    margin: 0;
+    
+}
+
+#rank_list li:hover {
+    background-color: #7777771c;
+}
+
+#rank_list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+div.rank {
+    box-sizing: border-box;
+    width: 30px;
+    font-weight: 700;
+    color: #1db954;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+.rank_info {
+    flex-grow: 1;
+    display: flex; 
+    gap: 40px;
+}
+
+
+.rank_info_title {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+
+.rank_info_artist {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #555;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+#rank_list .play_btn {
+    margin:10px;
+    background-color:#c7c7c73a;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.more_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more{
+    margin-right:20px;
+    font-size: 14px;
+    color:#555
 }
