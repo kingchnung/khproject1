@@ -1,0 +1,83 @@
+#content_section{
+    width:1100px;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#themaAlbum{
+    display: flex;
+    width:100%;
+    height:300px;
+    background-color: #363d66;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+#themaAlbum .themaAlbum_head {
+    box-sizing: border-box;
+    width: 250px;
+    height: 100%;
+    display: inline-block;
+    padding: 25px 20px;
+    color: white;
+}
+
+.play_btn{
+    margin-top: 80px;
+    background-image: url(../image/play-button.png);
+    background-size: 100%;
+    width: 45px;
+    height: 45px;
+    background-color:transparent;
+    border: 0;
+    border-radius: 100%;
+}
+
+.play_btn a{
+    color:transparent;
+}
+.play_btn:hover{
+     background-image: url(../image/play_button2.png);
+}
+
+
+
+.themaAlbum_list{
+    width: 400px;
+    display: inline-block;   
+}
+.themaAlbum_list li{
+    list-style-type: none;
+    margin: 15px;
+    display: flex;
+    
+}
+
+
+.themaAlbum_list li:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+.coverImage {
+    width:50px;
+    height:50px;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+
+.list_title{
+font-size: 20px;
+display: inline-block;
+margin-left: 20px;
+color: white;
+vertical-align: middle;
+}
+
+.list_singer{
+    font-size: 14px;
+    display: block;
+    color: white; 
+}
