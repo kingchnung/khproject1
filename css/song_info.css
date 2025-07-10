@@ -1,6 +1,12 @@
+html{
+    background-color: antiquewhite;
+}
 main{
+    border: 1px solid;
     font-family: 'Arial', sans-serif;
     padding: 30px;
+    width: 1100px;
+    margin: 0 auto;
 }
 h2{
     color: rgb(41, 40, 40);
@@ -14,11 +20,14 @@ h2{
     border: 1px solid black;
 }
 .album-image{
-    width: 250px;
     border-radius: 5px;
+    height: auto;
+    
+
 }
 .info-area{
     flex: 1;
+    background-color: white;
 }
 .song-info{
     font-size: 14px;
@@ -52,9 +61,6 @@ ul{
     width: 60px;
     color: gray;
 }
-.list2 li {
-    display: inline;
-}
 .list3 {
     display: flex;
     gap: 15px;
@@ -87,6 +93,9 @@ button.like{
     background: none;
     cursor: pointer;
     font-size: 14px;
+}
+button.like > .number{
+    font-size: 20px;
 }
 .list3 .like-num{
     display: flex;
