@@ -1,0 +1,6 @@
+body{background-color: #e2e0cd93;}
+[class$="section"]{
+    width:1100px;
+    margin: 0 auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

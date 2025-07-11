@@ -1,4 +1,5 @@
-#content_section{
+body{background-color: #e2e0cd93;}
+[class$="section"]{
     width:1100px;
     margin: 0 auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,6 +15,7 @@
     padding: 10px;
 
 }
+
 
 #themaAlbum .themaAlbum_head {
     box-sizing: border-box;
@@ -60,6 +62,7 @@
     position: relative;
     width: 230px;
     height: 230px;
+    margin-top: 5px;
 }
 
 .content a img {
@@ -118,15 +121,14 @@ vertical-align: middle;
 
 
 
-#second_section {  /* 1 */
+.second_section {  /* 1 */
     box-sizing: border-box;
     display:flex;
     margin: 40px auto;
     padding: 10px; 
-    width:100%;
 }
 
-#Album_chart { /* 2 */
+.Album_chart { /* 2 */
     box-sizing: border-box;
     width: 750px;
 }
@@ -137,10 +139,11 @@ vertical-align: middle;
     font-weight: 700;
     align-content: center;
     padding-left: 15px;
+    
 }
 
 
-#recommend-album { /* 3-2 */
+.recommend-album { /* 3-2 */
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;  
@@ -182,7 +185,6 @@ vertical-align: middle;
     padding: 8px;
     width: 300px;
     margin: 0;
-    
 }
 
 #rank_list li:hover {
@@ -228,9 +230,6 @@ div.rank {
     padding-left: 10px;
 }
 
-
-
-
 .rank_info_artist {
     box-sizing: border-box;
     font-size: 12px;
@@ -266,3 +265,4 @@ a{
     font-size: 14px;
     color:#555
 }
+
