@@ -5,6 +5,7 @@ html{
 header {
     display: flex;
     position: fixed;
+    justify-self: center;
     background-color: #e7e5cc;
     top: 0;
     left: 0;
@@ -15,7 +16,7 @@ header {
     
 }
 header div{
-    width: 1100px;
+    width: 100%;
 }
 header .main{
     width: 60px;
