@@ -17,58 +17,66 @@
         <li>SONG</li>
     </ul>
     <main id="conts_section">
-        <h2>Today PlayList</h2>
         <table class="search">
             <tr>
-                <td>
+                <td>Today PlayList</td>
+                <td class="td">
                     <select name="category">
                         <option value="tag">태그</option>
                         <option value="playlist">플레이리스트</option>
                         <option value="nickname">닉네임</option>
                     </select>
                 </td>
-                <td>
+                <td class="td">
                     <input type="text" name="search" id="search" placeholder=" ">
                     <img src="../image/playlist/돋보기.PNG" title="검색" onclick="search()">
                 </td>
-                <td>
+                <td class="td">
                     <button type="button" onclick="join()">DJ 신청하기</button>
                 </td>
             </tr>
         </table>
-        <h2>오늘은 뭘 듣지?</h2>
+        <h2 id="todaylist">오늘은 뭘 듣지?</h2>
         <ul class="playlist">
            <li class="list">
                 <img src="../image/playlist/노동요.jpg" title="에어컨이 필요없는 K-POP">
-                <p>에어컨이 필요없는 K-POP 여름 노동요</p>
+                <p>에어컨이 필요없는 여름 노동요</p>
                 <p class="DJ">DJ MorethanBlue</p>
                 <p class="listInfo">♡ 3,537 | 212곡</p>
+                <p class="button">
                 <button type="button" id="unable">#신나는</button>
                 <button type="button" id="unable">#기분전환</button>
+                </p>
            </li>
            <li class="list">
                 <img src="../image/playlist/올드팝.jpg" title="시간이 지나도 영원할 명곡">
                 <p>시간이 지나도 영원할 명곡, 올드팝</p>
                 <p class="DJ">DJ Mogu_</p>
                 <p class="listInfo">♡ 12 | 30곡</p>
+                <p class="button">
                 <button type="button" id="unable">#올드팝</button>
                 <button type="button" id="unable">#추억</button>
+                </p>
             </li>
             <li class="list">
                 <img src="../image/playlist/데뷔곡.jpg" title="푸릇푸릇한 남돌 데뷔곡">
                 <p>푸릇푸릇한 남돌 데뷔곡</p>
-                <p class="DJ">DJ </p>
+                <p class="DJ">DJ Hipster</p>
                 <p class="listInfo">♡ 1,156 | 32곡</p>
+                <p class="button">
                 <button type="button" id="unable">#남자아이돌</button>
                 <button type="button" id="unable">#데뷔곡</button>
+                </p>
            </li>
            <li class="list">
                 <img src="../image/playlist/스테디POP.jpg" title="멜로너 PICK! 스테디 POP">
                 <p>멜로너 PICK! 스테디 POP</p>
-                <p class="DJ">DJ </p>
+                <p class="DJ">DJ POP마스터</p>
                 <p class="listInfo">♡ 5,102 | 131곡</p>
+                <p class="button">
                 <button type="button" id="unable">#멜로너</button>
                 <button type="button" id="unable">#POP</button>
+                </p>
             </li>
         </ul>
     </main>
