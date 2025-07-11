@@ -10,13 +10,22 @@
 
 <body>
     <header>
-        <div>
-            <a href="../html/index.html"><img class="main" src="../image/index/play_button2.png" alt="아이콘"></a>
-            <input type="text" name="search" id="search">
-            <button class="button" type="button" onclick="search()"><img class="icon" src="../image/돋보기.PNG" alt="검색"
-                    title="검색"></button>
+        <div id="header-container">
+            <a href="../html/index.html" class="logo">
+                <img src="../image/index/play_button2.png" alt="로고" />
+            </a>
+            <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
         </div>
     </header>
+    <nav id="nav">
+        <ul class="nav-menu">
+            <li class="menu"><a href="#">실시간 Top100</a></li>
+            <li class="menu"><a href="#">장르별</a></li>
+            <li class="menu"><a href="#">뮤직어워드</a></li>
+            <li class="menu"><a href="#">매거진</a></li>
+            <li class="menu"><a href="#">공연소식</a></li>
+        </ul>
+    </nav>
     <main>
         <section class="song-info">
             <h2>곡 정보</h2>
