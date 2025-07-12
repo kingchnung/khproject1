@@ -21,49 +21,52 @@ header div#header-container {
     position: relative;
     width: 1100px;
     height: 70px;
-    gap: 30%;
+    gap: 25%;
     left: 20%;
 }
-div#header-container img{
+
+div#header-container img {
     position: relative;
     width: 60px;
     height: 60px;
 }
-div#header-container input#search{
-    width: 320px;
+
+div#header-container input#search {
+    width: 500px;
     height: 30px;
     margin-top: 10px;
     border-radius: 20px;
 }
+
 .pink-nav {
-  background-color: #e2e0cd;
-  text-align: center;
-  width: 100%;
+    background-color: #e2e0cd;
+    text-align: center;
+    width: 100%;
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 150px;
-  margin: 10px;
-  padding: 10px 0 0 0;
-  height: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 150px;
+    margin: 10px;
+    padding: 10px 0 0 0;
+    height: 30px;
 }
 
 .nav-menu li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 15px 20px;
-  transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-menu li a:hover {
-  color: #fff;
-  background-color: #e2e0cd;
-  border-radius: 5px;
+    color: #fff;
+    background-color: #e2e0cd;
+    border-radius: 5px;
 }
 
 
@@ -93,6 +96,7 @@ h2 {
     margin-top: 20px;
     border-bottom: 1px solid black;
 }
+
 h5 {
     border-bottom: 1px solid black;
 }
@@ -169,6 +173,7 @@ button#like {
     height: 25px;
     vertical-align: middle;
 }
+
 div.노래가사 {
     border-bottom: 1px solid black;
     width: 100%;
@@ -230,33 +235,38 @@ footer p.text {
     text-align: center;
     font-weight: 900;
 }
+
 div.commentContainer {
     height: 120px;
     display: flex;
     flex-direction: row;
-
 }
-div.commentContainer img{
+
+div.commentContainer img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
+
 div.userProfile {
     width: 100px;
     height: 100px;
 }
+
 div.userComment {
     display: flex;
     gap: 10px;
     height: 100px;
     vertical-align: center;
 }
-div.userComment #commentBox{
+
+div.userComment #commentBox {
     width: 900px;
     height: 100px;
     overflow: auto;
-    
-} 
+
+}
+
 button.commentBtn {
     border: 1px solid black;
     background-color: rgb(235, 233, 233);
@@ -264,16 +274,20 @@ button.commentBtn {
     width: 80px;
     height: 100px;
 }
+
 div #photo {
     margin-left: 100px;
     height: 30px;
 }
+
 div.commentN {
     gap: 50px;
     display: flex;
     border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
-div.commentN img{
+
+div.commentN img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -281,15 +295,126 @@ div.commentN img{
 div.commentN div {
     vertical-align: top;
     height: 100px;
-
 }
-div.commentN .usersName{
+
+div.commentN .usersName {
     width: 130px;
 }
-div.commentN .usersComment{
+
+div.commentN .usersComment {
     width: 700px;
     height: 33px;
 }
-div.commentN .usersFile{
+
+div.commentN .usersFile {
     height: 30px;
+}
+section.usersComment {
+    height: 400px;
+    overflow: auto;
+}
+
+#top100-list {
+    box-sizing: border-box;
+    display: block;
+    width: 220px;
+    position: fixed;
+    right: 5%;
+    top: 20%;
+}
+
+#rank_list{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #8d8c82;
+}
+
+
+#rank_list li{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #77777754;
+    padding: 8px;
+    width: 50px;
+    margin: 0;
+}
+
+#rank_list li:hover {
+    background-color: #7777771c;
+}
+
+#rank_list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+div.rank {
+    box-sizing: border-box;
+    width: 10px;
+    font-weight: 700;
+    color: #1db954;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+.rank_info {
+    flex-grow: 1;
+    display: flex; 
+    gap: 13px;
+}
+
+.rank_info_title {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.rank_info_artist {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #555;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+#rank_list .play_btn {
+    margin:10px;
+    background-color:#c7c7c73a;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.more_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more{
+    margin-right:20px;
+    font-size: 14px;
+    color:#555
 }

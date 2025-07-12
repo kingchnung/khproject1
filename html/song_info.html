@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <header>
+    <header> 
+    <!--헤더부분 검색창(input), 로고 누르면 메인화면 이동(index.html) -->
         <div id="header-container">
             <a href="../html/index.html" class="logo">
                 <img src="../image/index/play_button2.png" alt="로고" />
@@ -17,6 +18,7 @@
             <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
         </div>
     </header>
+    <!-- 내비게이션 이벤트(클릭 -> alert 추후 서비스예정)-->
     <nav id="nav">
         <ul class="nav-menu">
             <li class="menu"><a href="#">실시간 Top100</a></li>
@@ -26,7 +28,12 @@
             <li class="menu"><a href="#">공연소식</a></li>
         </ul>
     </nav>
+    <!-- 메인 작업공간 곡 정보, 가사, 댓글 -->
     <main>
+        <!-- 곡 정보 부분,
+         이벤트 기능 (like 버튼 클릭
+          -> 하트 색깔 채우기, like숫자 + 1
+          한번 더 누르면 - 1)-->
         <section class="song-info">
             <h2>곡 정보</h2>
             <div class="song">
@@ -62,6 +69,7 @@
                 </div>
             </div>
         </section>
+        <!-- 가사 부분 overflow scroll -->
         <section>
             <br />
             <h2 class="가사">가사</h2>
@@ -131,6 +139,9 @@
             </div>
         </section>
         <br />
+        <!-- 댓글 부분 
+         유저 프로필, 댓글 텍스트 박스, 댓글 좋아요, 싫어요 (js기능)
+         첨부 파일 버튼 -->
         <section class="comment">
             <h2>댓글</h3>
                 <div class="commentContainer">
@@ -148,7 +159,8 @@
                 </div>
         </section>
         <section class="usersComment">
-            <h5>총 1개</h5>
+            <!-- 댓글 총 개수 부분(ex. 총 4개) -->
+            <h5 id="totalComment"></h5>
             <div class="commentN">
                 <div class="usersProfile">
                     <img src="../image/info/춘봉.jpg">
@@ -158,7 +170,7 @@
                 </div>
                 <div>
                     <div class="usersComment">
-                        너무 좋다
+                        에옹~
                     </div>
                     <div class="usersFile">
                         첨부파일(사진)
@@ -175,10 +187,172 @@
                     </button>
                 </div>
             </div>
-
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../image/info/춘봉2.jpg">
+                </div>
+                <div class="usersName">
+                    춘봉2
+                </div>
+                <div>
+                    <div class="usersComment">
+                        냥냥~
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">2</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../image/info/제목 없음.png">
+                </div>
+                <div class="usersName">
+                    인직이
+                </div>
+                <div>
+                    <div class="usersComment">
+                        관제탑라우러
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">15</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">2</span>
+                    </button>
+                </div>
+            </div>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../image/info/제목 없음1.png">
+                </div>
+                <div class="usersName">
+                    빵빵이
+                </div>
+                <div>
+                    <div class="usersComment">
+                        옥지얌!
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">5</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">3</span>
+                    </button>
+                </div>
+            </div>
         </section>
-
     </main>
+    <!-- 중간 우측 실시간 top100 리스트 -->
+            <div id="top100-list">  <!--2-->
+                <!--3_1-->
+                <div class="Album_chart_header"> <span class="top100">실시간 top100</span></div>
+
+                <!--3_2-->
+                <div>
+                    <ul id="rank_list">
+                        <li><a href="#">
+                            <div class="rank">1</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">FAMOUS</div>
+                                <div class="rank_info_artist">ALLDAY PROJECT</div>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">2</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">Golden</div>
+                                <div class="rank_info_artist">HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">3</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">Dirty Work</div>
+                                <div class="rank_info_artist">aespa</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">4</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">Drowning</div>
+                                <div class="rank_info_artist">WOODZ</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">5</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">시작의 아이</div>
+                                <div class="rank_info_artist">마크툽 (MAKTUB)</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">6</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">너에게 닿기를</div>
+                                <div class="rank_info_artist">10CM</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">7</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">Soda Pop</div>
+                                <div class="rank_info_artist">KPop Demon Hunters </div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">8</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">모르시나요(PROD.로코베리)</div>
+                                <div class="rank_info_artist">조째즈</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">9</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">like JENNIE</div>
+                                <div class="rank_info_artist">제니 (JENNIE)</div>
+                            </div></a>
+                        </li>
+                        <li><a href="#">
+                            <div class="rank">10</div>
+                            <div class="rank_info">
+                                <div class="rank_info_title">Whiplash</div>
+                                <div class="rank_info_artist">aespa</div>
+                            </div></a>
+                        </li>
+                        <div class="more_wrap">
+                        <button type="button" class="play_btn"><a href=#>전체듣기</a></button>
+                        <a href="#" class="more"> 더보기 ></a>
+                        </div>
+                    </ul>
+                   
+                </div>
+            </div>
     <footer>
         <p class="text">YCY TEAM ALL RIGHTS RESERVED</p>
         <small>&copy;YCY TEAM <br /> 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F B CLASS</small>
