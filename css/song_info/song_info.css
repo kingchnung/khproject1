@@ -242,10 +242,11 @@ div.commentContainer {
     flex-direction: row;
 }
 
-div.commentContainer img {
+div.userProfile img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    margin-top: 20px;
 }
 
 div.userProfile {
@@ -264,6 +265,7 @@ div.userComment #commentBox {
     width: 900px;
     height: 100px;
     overflow: auto;
+    border-radius: 20px;
 
 }
 
@@ -319,7 +321,7 @@ section.usersComment {
     display: block;
     width: 220px;
     position: fixed;
-    right: 5%;
+    right: 3%;
     top: 20%;
 }
 
@@ -327,7 +329,7 @@ section.usersComment {
     list-style-type: none;
     padding: 5px;
     margin: 5px;
-    border: 1px solid #8d8c82;
+    border: 1px solid #3eada4;
 }
 
 
@@ -337,7 +339,7 @@ section.usersComment {
     align-items: center;
     border-bottom: 1px solid #77777754;
     padding: 8px;
-    width: 50px;
+    width: 200px;
     margin: 0;
 }
 
