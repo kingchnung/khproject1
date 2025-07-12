@@ -1,5 +1,5 @@
 html {
-    background-color: #e2e0cd;
+    background-color: #e2e0cd93;
     width: 100%;
 }
 
@@ -71,7 +71,6 @@ div#header-container input#search {
 
 
 body {
-    background-color: #e2e0cd;
     width: 100%;
     height: 100%;
 }
@@ -190,6 +189,7 @@ table {
 table td, th{
     border: 1px solid black;
     height: 30px;
+    padding: 5px;
 }
 table th {
     width: 200px;
