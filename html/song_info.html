@@ -44,8 +44,9 @@
                     </div>
                     <ul class="list3" style="list-style: none;">
                         <li>
-                            <button class="like">
-                                <span class="number">10,767</span>
+                            <button id="like">
+                                <span id="likeIcon">🩶</span>
+                                <span id="likeNumber">10767</span>
                             </button>
                         </li>
                         <li>
@@ -129,6 +130,54 @@
                 </ul>
             </div>
         </section>
+        <br />
+        <section class="comment">
+            <h2>댓글</h3>
+                <div class="commentContainer">
+                    <div class="userProfile">
+                        <img src="../image/info/제목 없음.png" alt="user" />
+                    </div>
+                    <div class="userComment">
+                        <input type="text" name="commentBox" id="commentBox"
+                            placeholder="     *게시물의 저작권 등 분쟁, 개인정보 노출로 인한 책임은 작성자 또는 게시자에게 있음을 유의해 주세요." />
+                        <button type="submit" class="commentBtn">등록</button>
+                    </div>
+                </div>
+                <div>
+                    <input type="file" name="photo" id="photo" accept="image/gif, image/jpeg, image/png" />
+                </div>
+        </section>
+        <section class="usersComment">
+            <h5>총 1개</h5>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../image/info/춘봉.jpg">
+                </div>
+                <div class="usersName">
+                    춘봉1
+                </div>
+                <div>
+                    <div class="usersComment">
+                        너무 좋다
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="good">
+                        <span>👍</span>
+                        <span id="goodCount">5</span>
+                    </button>
+                    <button type="button" id="bad">
+                        <span>👎</span>
+                        <span id="badCount">3</span>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
     </main>
     <footer>
         <p class="text">YCY TEAM ALL RIGHTS RESERVED</p>
