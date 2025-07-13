@@ -1,6 +1,5 @@
 html {
     background-color: #e2e0cd93;
-    width: 100%;
 }
 
 header {
@@ -21,21 +20,37 @@ header div#header-container {
     position: relative;
     width: 1100px;
     height: 70px;
-    gap: 25%;
+    gap: 10%;
     left: 20%;
+    vertical-align: middle;
 }
 
 div#header-container img {
     position: relative;
-    width: 60px;
-    height: 60px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+div.logo {
+    width: 300px;
+    height: 45px;
+}
+.logo span {
+    font-size: 30px;
 }
 
 div#header-container input#search {
     width: 500px;
     height: 30px;
-    margin-top: 10px;
+    top: 10px;
+    margin: 10px 30px 0 0;
     border-radius: 20px;
+}
+
+div#header-container a{
+    width: 60px;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 .pink-nav {
@@ -127,6 +142,12 @@ div.info-area {
 p.song-title {
     font-size: 24px;
     margin-bottom: 5px;
+    vertical-align: top;
+}
+
+p.song-title span {
+    font-size: 12px;
+    vertical-align: top;
 }
 
 p.singer {
@@ -177,6 +198,7 @@ table caption {
     font-weight: bold;
     margin-bottom: 10px;
     color: rgb(41, 40, 40);
+    text-align: left;
 }
 table {
     border: 1px solid black;

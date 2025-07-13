@@ -1,0 +1,38 @@
+html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 50%;
+    background-color: #e2e0cd93;
+}
+div {
+    margin: 5px 0px;
+}
+
+div.logo {
+    margin-top: 15%;
+}
+
+div.logo img, span{
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    color: black;
+}
+
+#id, #pwd {
+    width: 340px;
+    height: 50px;
+}
+

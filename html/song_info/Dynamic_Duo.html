@@ -12,10 +12,14 @@
     <header>
         <!--헤더부분 검색창(input), 로고 누르면 메인화면 이동(index.html) -->
         <div id="header-container">
-            <a href="../../html/index.html" class="logo">
-                <img src="../../image/index/play_button2.png" alt="로고" />
-            </a>
+            <div class="logo">
+                <a href="../../html/index.html">
+                    <img src="../../image/index/play_button2.png" alt="로고" />
+                    <span>YCY Music</span>
+                </a>
+            </div>
             <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+            <a href="../log_in.html">로그인</a>
         </div>
     </header>
     <!-- 내비게이션 이벤트(클릭 -> alert 추후 서비스예정)-->
@@ -35,13 +39,13 @@
           -> 하트 색깔 채우기, like숫자 + 1
           한번 더 누르면 - 1)-->
         <section class="song-info">
-            <h2>곡 정보</h2>
+            <h2>앨범 정보</h2>
             <div class="song">
                 <div class="album-image">
                     <img src="../../image/index/다이나믹듀오_cover.jpg" alt="앨범 이미지" title="앨범 이미지" />
                 </div>
                 <div class="info-area">
-                    <p class="song-title">Ring My bell (Feat. 나얼 Of Brown Eyed Soul)</p>
+                    <p class="song-title">Ring My bell (Feat. 나얼 Of Brown Eyed Soul) <span>TITLE</span></p>
                     <p class="singer">다이나믹 듀오</p>
                     <div class="list1">
                         <div><span>앨범</span>Taxi Driver</div>
