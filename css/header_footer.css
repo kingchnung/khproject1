@@ -19,20 +19,36 @@ header div#header-container {
     gap: 10%;
     left: 20%;
     vertical-align: middle;
+
 }
 
 div#header-container img {
     position: relative;
-    top: 10px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
+
 div.logo {
     width: 300px;
-    height: 45px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
+    white-space: nowrap; 
 }
 .logo span {
-    font-size: 30px;
+    font-size: 23px;
+    font-weight: bold;
+    width:200px;
 }
 
 div#header-container input#search {
