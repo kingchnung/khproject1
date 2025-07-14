@@ -14,11 +14,11 @@ document.getElementById("like").addEventListener("click", (e) => {
     const icon = document.getElementById("likeIcon");
     let likedSongCount = Number(document.getElementById("likeNumber").textContent);
     
-    if (icon.innerHTML == '🩶') {
+    if (icon.innerHTML == '🤍') {
         icon.innerHTML = '❤️';
         likedSongCount++;
     } else {
-        icon.innerHTML = '🩶'
+        icon.innerHTML = '🤍'
         likedSongCount--;
     }
 
