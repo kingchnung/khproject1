@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YCY Music - 음악과 함께하는 공간</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
 </head>
 <body>
     <header>
-
+        <!--헤더부분 검색창(input), 로고 누르면 메인화면 이동(index.html) -->
+        <div id="header-container">
+            <div class="logo">
+                <a href="../../html/index.html">
+                    <img src="../../image/index/play_button2.png" alt="로고" />
+                    <span>YCY Music</span>
+                </a>
+            </div>
+            <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+            <a href="../html/log_in.html">로그인</a>
+        </div>
     </header>
+    <!-- 내비게이션 이벤트(클릭 -> alert 추후 서비스예정)-->
+    <nav id="nav">
+        <ul class="nav-menu">
+            <li class="menu"><a href="#">실시간 Top100</a></li>
+            <li class="menu"><a href="#">장르별</a></li>
+            <li class="menu"><a href="#">뮤직어워드</a></li>
+            <li class="menu"><a href="#">매거진</a></li>
+            <li class="menu"><a href="#">공연소식</a></li>
+        </ul>
+    </nav>
+    <!-- 메인 작업공간 곡 정보, 가사, 댓글 -->
 
 
     <main>
@@ -205,8 +227,10 @@
     </div>  <!-- second-section 종료 -->
 
     </main>
-    <footer>
-
+     <footer>
+        <p class="text">YCY TEAM ALL RIGHTS RESERVED</p>
+        <small>&copy;YCY TEAM <br /> 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F B CLASS</small>
     </footer>
+    <script src="../../js/song_info.js"></script>
 </body>
 </html>
