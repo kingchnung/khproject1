@@ -1,49 +1,82 @@
 body {
-    margin: 0 auto;
-    width: 1100px;
-    background-color: #e2e0cd93;
-    border: 1px solid black;
+    width: 100%;
+    background-color: #e8e8df;
 }
 
-.menu li {
-    list-style: none;
-    float : left;
-    margin: 20px 30px;
+main {
+    width: 1100px;
+    margin: 0 auto;
 }
+
+h1 {
+    margin: 50px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 #conts_section > .search {
-    margin: 100px;
+    margin-left: 700px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    position: relative;
+    top: 50px;
 }
 
-.search td:nth-child(1) {
-    padding: 0 250px 0 0;
-    font-size: 30px;
-    font-weight: bold;
+img[title="검색"] {
+   position:relative;
+   right: 120px;
+   top: 1px;
+   height: 28px;
 }
 
-.search .td {
-    float: left;
-}
-
-#todaylist {
+h2 {
     margin: 0 70px;
 }
 
 .playlist {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;        
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
 }
 
 .playlist li {
     margin: 10px 10px;
-    background-color: white;
+    background-color: #e2e1d993;
 }
 
 .list p:nth-child(2) {
-    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.list p:nth-child() {
-    margin: 0 30px;
+.list p:nth-child(2):hover {
+    font-weight: bold;
+    color: rgb(236, 145, 66);
 }
+
+.list p {
+    margin: 10px 15px;
+}
+
+li button {
+    background-color: #e2e1d993;
+    border: 1px solid #c5c3b393;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 0px 10px 10px;
+}
+
+li button:hover {
+    background-color: #d4d2c793;
+    border: 1px solid #58532993;
+    color: #58532993;
+    font-weight: bold;
+}
+

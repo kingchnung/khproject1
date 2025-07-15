@@ -5,82 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayList</title>
     <link rel="stylesheet" a href="../css/playlist.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
 </head>
 <body>
-    <header>
-        
+   <header>
+        <!--헤더부분 검색창(input), 로고 누르면 메인화면 이동(index.html) -->
+        <div id="header-container">
+            <div class="logo">
+                <a href="../../html/index.html">
+                    <img src="../image/logo.png" alt="로고" />
+                    <span>YCY Music</span>
+                </a>
+            </div>
+            <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+            <a href="../html/log_in.html">로그인</a>
+        </div>
     </header>
-    <ul class="menu">
-        <li>HOME</li>
-        <li>INDEX</li>
-        <li>PLAYLIST</li>
-        <li>SONG</li>
-    </ul>
+      <nav id="nav">
+        <ul class="nav-menu">
+            <li class="menu"><a href="#">실시간 Top100</a></li>
+            <li class="menu"><a href="#">테마별</a></li>
+            <li class="menu"><a href="#">뮤직어워드</a></li>
+            <li class="menu"><a href="#">매거진</a></li>
+            <li class="menu"><a href="#">공연소식</a></li>
+        </ul>
+    </nav>
+
     <main id="conts_section">
-        <table class="search">
-            <tr>
-                <td>Today PlayList</td>
-                <td class="td">
-                    <select name="category">
-                        <option value="tag">태그</option>
-                        <option value="playlist">플레이리스트</option>
-                        <option value="nickname">닉네임</option>
-                    </select>
-                </td>
-                <td class="td">
-                    <input type="text" name="search" id="search" placeholder=" ">
-                    <img src="../image/playlist/돋보기.PNG" title="검색" onclick="search()">
-                </td>
-                <td class="td">
-                    <button type="button" onclick="join()">DJ 신청하기</button>
-                </td>
-            </tr>
-        </table>
+        <h1>Today PlayList</h1>
+        <div class="search">
+             <select name="category">
+                <option value="tag">태그</option>
+                <option value="playlist">플레이리스트</option>
+                <option value="nickname">닉네임</option>
+             </select>
+            <input type="text" name="search" placeholder=" ">
+            <button type="button" id="join">DJ 신청하기</button>
+            <img src="../image/playlist/돋보기.PNG" title="검색" onclick="search()">
+        </div>
+
         <h2 id="todaylist">오늘은 뭘 듣지?</h2>
         <ul class="playlist">
            <li class="list">
-                <img src="../image/playlist/노동요.jpg" title="에어컨이 필요없는 K-POP">
-                <p>에어컨이 필요없는 여름 노동요</p>
+                <img src="../image/playlist/플리4.jpg" title="에어컨이 필요없는 K-POP">
+                <p>에어컨이 필요없는<br />여름 노동요</p>
                 <p class="DJ">DJ MorethanBlue</p>
-                <p class="listInfo">♡ 3,537 | 212곡</p>
-                <p class="button">
-                <button type="button" id="unable">#신나는</button>
-                <button type="button" id="unable">#기분전환</button>
-                </p>
+                <p id="listInfo">♡ 5,121 |  212곡</p>
+                <button type="button" class="unable">#신나는</button>
+                <button type="button" class="unable">#기분전환</button>
            </li>
            <li class="list">
-                <img src="../image/playlist/올드팝.jpg" title="시간이 지나도 영원할 명곡">
-                <p>시간이 지나도 영원할 명곡, 올드팝</p>
+                <img src="../image/playlist/플리1.jpg" title="시간이 지나도 영원할 명곡">
+                <p>시간이 지나도 영원할 명곡,<br /> 올드팝</p>
                 <p class="DJ">DJ Mogu_</p>
-                <p class="listInfo">♡ 12 | 30곡</p>
-                <p class="button">
-                <button type="button" id="unable">#올드팝</button>
-                <button type="button" id="unable">#추억</button>
-                </p>
+                <p class="listInfo">♡ 12  |  30곡</p>
+                <button type="button" class="unable">#올드팝</button>
+                <button type="button" class="unable">#추억</button>
             </li>
             <li class="list">
-                <img src="../image/playlist/데뷔곡.jpg" title="푸릇푸릇한 남돌 데뷔곡">
-                <p>푸릇푸릇한 남돌 데뷔곡</p>
+                <img src="../image/playlist/플리2.jpg" title="느.좋 R&B">
+                <p>느낌 있는 카페에서 들려오는<br /> R&B</p>
                 <p class="DJ">DJ Hipster</p>
-                <p class="listInfo">♡ 1,156 | 32곡</p>
-                <p class="button">
-                <button type="button" id="unable">#남자아이돌</button>
-                <button type="button" id="unable">#데뷔곡</button>
-                </p>
+                <p class="listInfo">♡ 1,156  |  32곡</p>
+                <button type="button" class="unable">#알앤비</button>
+                <button type="button" class="unable">#카페</button>
            </li>
            <li class="list">
-                <img src="../image/playlist/스테디POP.jpg" title="멜로너 PICK! 스테디 POP">
-                <p>멜로너 PICK! 스테디 POP</p>
+                <img src="../image/playlist/플리3.jpg" title="멜로너 PICK! 스테디 POP">
+                <p>멜로너 PICK!<br /> 스테디 POP</p>
                 <p class="DJ">DJ POP마스터</p>
-                <p class="listInfo">♡ 5,102 | 131곡</p>
-                <p class="button">
-                <button type="button" id="unable">#멜로너</button>
-                <button type="button" id="unable">#POP</button>
-                </p>
+                <p class="listInfo">♡ 5,102  |  131곡</p>
+                <button type="button" class="unable">#멜로너</button>
+                <button type="button" class="unable">#POP</button>
+            </li>
+        </ul>
+
+        <h2 id="studying">이어폰 끼고 공부 모드 ON!</h2>
+        <ul class="playlist">
+           <li class="list">
+                <img src="../image/playlist/집중력.jpg" title="집중력 UP 백색소음">
+                <p>집중력 향상을 위한<br />백색소음</p>
+                <p class="DJ">DJ 뮤직테라피마스터</p>
+                <p id="listInfo">♡ 1,257 |  32곡</p>
+                <button type="button" class="unable">#집중</button>
+                <button type="button" class="unable">#백색소음</button>
+           </li>
+           <li class="list">
+                <img src="../image/playlist/로파이.jpg" title="편안한 로파이">
+                <p>공부하거나 과제하면서 듣는<br /> 편안한 로파이</p>
+                <p class="DJ">DJ MorethanBlue</p>
+                <p class="listInfo">♡ 8,565  |  216곡 </p>
+                <button type="button" class="unable">#집중</button>
+                <button type="button" class="unable">#공부</button>
+            </li>
+            <li class="list">
+                <img src="../image/playlist/감성팝.jpg" title="감성 K-POP">
+                <p>공부할 때 듣기 좋은<br /> 감성 케이팝</p>
+                <p class="DJ">DJ 구름._.</p>
+                <p class="listInfo">♡ 175  |  74곡</p>
+                <button type="button" class="unable">#공부</button>
+                <button type="button" class="unable">#잔잔한</button>
+           </li>
+           <li class="list">
+                <img src="../image/playlist/잔잔한팝.jpg" title="방해없는 잔잔st">
+                <p>공부할 때 방해되지 않는<br /> 잔잔한 POP</p>
+                <p class="DJ">DJ 나의작은애옹이</p>
+                <p class="listInfo">♡ 124  |  61곡</p>
+                <button type="button" class="unable">#잔잔한</button>
+                <button type="button" class="unable">#POP</button>
             </li>
         </ul>
     </main>
-    
+     <footer>
+        <p class="text">YCY TEAM ALL RIGHTS RESERVED</p>
+        <small>&copy;YCY TEAM <br /> 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F B CLASS</small>
+    </footer>
+
+
     <script src="../js/playlist.js"></script>
 </body>
 </html>

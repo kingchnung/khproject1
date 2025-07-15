@@ -1,0 +1,54 @@
+html {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    text-align: center;
+    top: 50%;
+    background-color: #e8e8df;
+}
+div {
+    margin: 10px 0;
+}
+div.logo {
+  margin-top: 15%;
+  text-align: center;
+}
+
+div.logo a {
+  display: flex;
+  align-items: center; /* 세로 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  gap: 10px; /* 이미지와 텍스트 간격 */
+}
+
+div.logo img {
+  width: 60px;
+  height: 60px;
+  background-color: #c4c2b293;;
+}
+
+div.logo span {
+  font-size: 60px;
+  color: black;
+}
+
+#id, #pwd {
+    width: 380px;
+    height: 50px;
+}
+
+button {
+    width: 340px;
+    height: 50px;
+    font-size: 20px;
+}
+

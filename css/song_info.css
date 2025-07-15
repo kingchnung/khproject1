@@ -1,109 +1,375 @@
-html{
-    background-color: antiquewhite;
+html {
+    background-color: #e8e8df;
 }
-main{
-    border: 1px solid;
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+div.song img {
+    width: 250px;
+    height: 280px;
+}
+
+main {
+    border: 1px;
     font-family: 'Arial', sans-serif;
     padding: 30px;
     width: 1100px;
-    margin: 0 auto;
+    margin: 50px auto 150px;
+    box-shadow: 0 0 10px 10px #b6b28c;
 }
-h2{
+
+h2 {
     color: rgb(41, 40, 40);
     font-size: 24px;
     margin-top: 20px;
-    border-top: 1px solid rgb(148, 144, 144);
+    border-bottom: 1px solid black;
 }
-.song{
+
+h5 {
+    border-bottom: 1px solid black;
+}
+
+div.song {
+    background-color: #e7e5cc;
     display: flex;
-    gap: 30px;
-    border: 1px solid black;
+    height: 280px;
 }
-.album-image{
+
+.album-image {
     border-radius: 5px;
-    height: auto;
-    
+    height: 225px;
+
 
 }
-.info-area{
+
+div.info-area {
     flex: 1;
-    background-color: white;
+    margin-left: 25px;
+    height: 280px;
 }
-.song-info{
+
+.song-info {
     font-size: 14px;
     line-height: 1.8;
-    margin-bottom: 20px;
 }
-.song-title{
+
+p.song-title {
     font-size: 24px;
     margin-bottom: 5px;
-    color: rgb(41, 40, 40);
+    vertical-align: top;
 }
-.singer{
-    color: rgb(9, 226, 9);
+
+p.song-title span {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+p.singer {
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: px;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
-ul{
-    padding: 0;
-    margin: 0;
+
+ul.list3 {
     list-style: none;
     font-size: 14px;
     line-height: 1.6;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: -50px;
 }
 
 .list1 {
     color: gray;
 }
-.list1 span{
+
+.list1 span {
     display: inline-block;
     width: 60px;
-    color: gray;
 }
-.list3 {
-    display: flex;
-    gap: 15px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-}
-.list li{
-    display: flex;
-    align-items: center;
-}
-button{
+
+button {
     border: none;
     background: none;
     cursor: pointer;
     font-size: 20px;
 }
+
 button:hover {
     text-decoration: underline;
 }
-button.like::before{
-    content: '♡';
-    margin-right: 5px;
-    font-size: 20px;
-    color: rgb(9, 226, 9);
-    padding: 5px;
-}
-button.like{
+
+button#like {
     border: none;
     background: none;
     cursor: pointer;
-    font-size: 14px;
+    height: 25px;
+    vertical-align: middle;
 }
-button.like > .number{
-    font-size: 20px;
+table caption {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(41, 40, 40);
+    text-align: left;
 }
-.list3 .like-num{
-    display: flex;
+table {
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 40px auto 0;
+    width: 1100px;
+    table-layout: fixed;
 }
-.가사{
-    border-top: 1px solid black;
+table td, th{
+    border: none;
+    height: 30px;
+    padding: 5px;
+}
+table th {
+    width: 200px;
+    background-color: #e7e5cc;
+}
+.track {
+    width: 50px;
+}
+
+div.노래가사 {
     border-bottom: 1px solid black;
     width: 100%;
     height: 300px;
     overflow: auto;
+}
+
+section.writer ul {
+    display: flex;
+    margin-left: -35px;
+    list-style-type: none;
+}
+
+.writer-list {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.writer-item {
+    display: flex;
+    align-items: center;
+}
+
+.writer-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+div.writer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.writer-text .name {
+    font-weight: 700;
+}
+
+
+
+div.commentContainer {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.userProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+div.userProfile {
+    width: 100px;
+    height: 100px;
+}
+
+div.userComment {
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    vertical-align: center;
+}
+
+div.userComment #commentBox {
+    width: 900px;
+    height: 100px;
+    overflow: auto;
+    border-radius: 20px;
+
+}
+
+button.commentBtn {
+    border: 1px solid black;
+    background-color: rgb(235, 233, 233);
+    border-radius: 10px;
+    width: 80px;
+    height: 100px;
+}
+
+div #photo {
+    margin-left: 100px;
+    height: 30px;
+}
+
+div.commentN {
+    gap: 50px;
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+div.commentN img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+div.commentN div {
+    vertical-align: top;
+    height: 100px;
+}
+
+div.commentN .usersName {
+    width: 130px;
+}
+
+div.commentN .usersComment {
+    width: 700px;
+    height: 33px;
+}
+
+div.commentN .usersFile {
+    height: 30px;
+}
+section.usersComment {
+    height: 400px;
+    overflow: auto;
+}
+
+#top100-list {
+    box-sizing: border-box;
+    display: block;
+    width: 220px;
+    position: fixed;
+    right: 3%;
+    top: 20%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.288);
+}
+
+#rank_list{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #3eada4;
+}
+
+
+#rank_list li{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #77777754;
+    padding: 8px;
+    width: 200px;
+    margin: 0;
+}
+
+#rank_list li:hover {
+    background-color: #7777771c;
+}
+
+#rank_list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+div.rank {
+    box-sizing: border-box;
+    width: 10px;
+    font-weight: 700;
+    color: #1db954;
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+.rank_info {
+    flex-grow: 1;
+    display: flex; 
+    gap: 13px;
+}
+
+.rank_info_title {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.rank_info_artist {
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #555;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+#rank_list .play_btn {
+    margin:10px;
+    background-color:#c7c7c73a;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.more_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more{
+    margin-right:20px;
+    font-size: 14px;
+    color:#555
 }

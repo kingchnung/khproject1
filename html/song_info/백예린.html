@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YCY Music 곡 정보</title>
+    <link rel="stylesheet" href="../../css/song_info.css">
+     <link rel="stylesheet" href="../../css/header_footer.css">
+</head>
+
+<body>
+    <header>
+        <!--헤더부분 검색창(input), 로고 누르면 메인화면 이동(index.html) -->
+        <div id="header-container">
+            <div class="logo">
+                <a href="../../html/index.html">
+                    <img src="../../image/logo.png" alt="로고" />
+                    <span>YCY Music</span>
+                </a>
+            </div>
+            <input type="text" name="search" id="search" placeholder="검색어를 입력하세요.">
+            <a href="../log_in.html">로그인</a>
+        </div>
+    </header>
+    <!-- 내비게이션 이벤트(클릭 -> alert 추후 서비스예정)-->
+    <nav id="nav">
+        <ul class="nav-menu">
+            <li class="menu"><a href="#">실시간 Top100</a></li>
+            <li class="menu"><a href="../playlist.html">테마별</a></li>
+            <li class="menu"><a href="#">뮤직어워드</a></li>
+            <li class="menu"><a href="#">매거진</a></li>
+            <li class="menu"><a href="#">공연소식</a></li>
+        </ul>
+    </nav>
+    <!-- 메인 작업공간 곡 정보, 가사, 댓글 -->
+    <main>
+        <!-- 곡 정보 부분,
+         이벤트 기능 (like 버튼 클릭
+          -> 하트 색깔 채우기, like숫자 + 1
+          한번 더 누르면 - 1)-->
+        <section class="song-info">
+            <h2>앨범 정보</h2>
+            <div class="song">
+                <div class="album-image">
+                    <img src="../../image/index/백예린_cover.jpg" alt="앨범 이미지" title="앨범 이미지" />
+                </div>
+                <div class="info-area">
+                    <p class="song-title">Square (2017) <span>TITLE</span></p>
+                    <p class="singer">백예린 (Yerin Baek)</p>
+                    <div class="list1">
+                        <div><span>앨범</span>Every letter I sent you</div>
+                        <div><span>발매일</span>2019.12.10</div>
+                        <div><span>장르</span>R&B/Soul</div>
+                        <div><span>FLAC</span>Flac 16bit</div>
+                    </div>
+                    <ul class="list3" style="list-style: none;">
+                        <li>
+                            <button id="like">
+                                <span id="likeIcon">🤍</span>
+                                <span id="likeNumber">313313</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="down" value="곡 다운">곡 다운</button>
+                        </li>
+                        <li>
+                            <button class="FLAC" value="FLAC다운">FLAC다운</button>
+                        </li>
+                        <li>
+                            <button class="gift" value="선물하기">선물하기</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 앨범 수록곡 -->
+        <section>
+            <table id="album-songs">
+                <colgroup>
+                    <col class="track"> <!-- 첫 번째 열만 너비 지정 -->
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <caption>앨범 수록곡</caption>
+                <tr>
+                    <th>트랙</th>
+                    <th>곡명</th>
+                    <th>작사</th>
+                    <th>작곡</th>
+                    <th>편곡</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Intro</td>
+                    <td></td>
+                    <td>백예린</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rest</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Popo (How deep is our love?)</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>can i b u</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Meant to be</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Mr.gloomy</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>lovelovelove</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bunny</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Berlin</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Datoom</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Not a girl</td>
+                    <td>백예린</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Newsong2</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Amy</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>True lover</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Point (Feat. Loopy)</td>
+                    <td>백예린, Loopy</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Square (2017)</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>London</td>
+                    <td>백예린</td>
+                    <td>백예린, 구름</td>
+                    <td>구름</td>
+                </tr>
+            </table>
+        </section>
+        <!-- 가사 부분 overflow scroll -->
+        <section>
+            <br />
+            <h2 class="가사">가사</h2>
+            <div class="노래가사">
+                <p>All the colors and personalities</p>
+                <p>you can’t see right through what I truly am</p>
+                <p>you’re hurting me without noticing</p>
+                <p>I’m so, so broke like someone just robbed me</p>
+                <p>I’m no invincible</p>
+                <p>I have much memories of getting more weaker</p>
+                <p>I know I’m not loveable</p>
+                <p>but you know what you’d have to say</p>
+                <p>“Come on let’s go to bed</p>
+                <p>we gonna rock the night away</p>
+                <p>who did that to you, babe</p>
+                <p>If you’re not in the right mood to sleep now then,</p>
+                <p>Come on, let’s drink and have very unmanageable day</p>
+                <p>would you want me in bae</p>
+                <p>If you’re not in the right mood to sleep now then</p>
+                <p>come take my arms and go</p>
+                <p>I’II be yours for sure”</p>
+                <p>All the traces and reminiscences</p>
+                <p>You can’t sense right through how I truly was</p>
+                <p>You were gripping me without noticing</p>
+                <p>Was so, so strange like Someone never loved me</p>
+                <p>I’m no invincible</p>
+                <p>I have much memories of getting more weaker</p>
+                <p>I know I’m not loveable</p>
+                <p>but you know what you’d have to say</p>
+                <p>“Come on let’s go to bed</p>
+                <p>we gonna rock the night away!</p>
+                <p>who did that to you, babe</p>
+                <p>If you’re not in the right mood to sleep now then,</p>
+                <p>Come on, let’s drink and have very unmanageable day</p>
+                <p>would you want me, in bae</p>
+                <p>If you’re not in the right mood to sleep now then</p>
+                <p>come take my arms and go</p>
+                <p>I’ll be yours for sure”</p>
+                <p>You’re the only one, who saw my yesterday</p>
+                <p>the one who knows I’m here alive today</p>
+                <p>Comfort me say, what I’m meant to you</p>
+                <p>you should know what you have to say</p>
+                <p>“Come on let’s go to bed</p>
+                <p>we gonna rock the night away</p>
+                <p>who did that to you, babe</p>
+                <p>If you’re not in the right mood to sleep now then,</p>
+                <p>Come on, let’s drink and have very unmanageable day</p>
+                <p>would you want me in, bae</p>
+                <p>If you’re not in the right mood to sleep now then</p>
+                <p>come, take my arms and go</p>
+                <p>I’ll be yours for sure”</p>
+            </div>
+
+        </section>
+        <!-- 작사 작곡 프로필 부분 -->
+        <section class="writer">
+            <h2>작사 / 작곡</h2>
+            <div class="div-writer">
+                <ul class="writer-list">
+                    <li class="writer-item">
+                        <img src="../../image/info/백예린.jpg">
+                        <div class="writer-text">
+                            <span class="name">백예린</span>
+                            <span class="writer">작사</span>
+                        </div>
+                    </li>
+                    <li class="writer-item">
+                        <img src="../../image/info/구름.jpg">
+                        <div class="writer-text">
+                            <span class="name">구름</span>
+                            <span class="writer">작사</span>
+                        </div>
+                    </li>
+                    <li class="writer-item">
+                        <img src="../../image/info/백예린.jpg">
+                        <div class="writer-text">
+                            <span class="name">백예린</span>
+                            <span class="writer">작곡</span>
+                        </div>
+                    </li>
+                    <li class="writer-item">
+                        <img src="../../image/info/구름.jpg">
+                        <div class="writer-text">
+                            <span class="name">구름</span>
+                            <span class="writer">작곡</span>
+                        </div>
+                    </li>
+                    <li class="writer-item">
+                        <img src="../../image/info/구름.jpg">
+                        <div class="writer-text">
+                            <span class="name">구름</span>
+                            <span class="writer">편곡</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br />
+        <!-- 댓글 부분 
+         유저 프로필, 댓글 텍스트 박스, 댓글 좋아요, 싫어요 (js기능)
+         첨부 파일 버튼 -->
+        <section class="comment">
+            <h2>댓글</h3>
+                <div class="commentContainer">
+                    <div class="userProfile">
+                        <img src="../../image/info/제목 없음.png" alt="user" />
+                    </div>
+                    <div class="userComment">
+                        <input type="text" name="commentBox" id="commentBox"
+                            placeholder="     *게시물의 저작권 등 분쟁, 개인정보 노출로 인한 책임은 작성자 또는 게시자에게 있음을 유의해 주세요." />
+                        <button type="submit" class="commentBtn">등록</button>
+                    </div>
+                </div>
+                <div>
+                    <input type="file" name="photo" id="photo" accept="image/gif, image/jpeg, image/png" />
+                </div>
+        </section>
+        <section class="usersComment">
+            <!-- 댓글 총 개수 부분(ex. 총 4개) -->
+            <h5 id="totalComment"></h5>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../../image/info/춘봉.jpg">
+                </div>
+                <div class="usersName">
+                    춘봉1
+                </div>
+                <div>
+                    <div class="usersComment">
+                        에옹~
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="good">
+                        <span>👍</span>
+                        <span id="goodCount">5</span>
+                    </button>
+                    <button type="button" id="bad">
+                        <span>👎</span>
+                        <span id="badCount">3</span>
+                    </button>
+                </div>
+            </div>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../../image/info/춘봉2.jpg">
+                </div>
+                <div class="usersName">
+                    춘봉2
+                </div>
+                <div>
+                    <div class="usersComment">
+                        냥냥~
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">2</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../../image/info/제목 없음.png">
+                </div>
+                <div class="usersName">
+                    인직이
+                </div>
+                <div>
+                    <div class="usersComment">
+                        관제탑라우러
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">15</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">2</span>
+                    </button>
+                </div>
+            </div>
+            <div class="commentN">
+                <div class="usersProfile">
+                    <img src="../../image/info/제목 없음1.png">
+                </div>
+                <div class="usersName">
+                    빵빵이
+                </div>
+                <div>
+                    <div class="usersComment">
+                        옥지얌!
+                    </div>
+                    <div class="usersFile">
+                        첨부파일(사진)
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="good">
+                        <span>👍</span>
+                        <span class="goodCount">5</span>
+                    </button>
+                    <button type="button" class="bad">
+                        <span>👎</span>
+                        <span class="badCount">3</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 중간 우측 실시간 top100 리스트 -->
+    <div id="top100-list"> <!--2-->
+        <!--3_1-->
+        <div class="Album_chart_header"> <span class="top100">실시간 top100</span></div>
+
+        <!--3_2-->
+        <div>
+            <ul id="rank_list">
+                <li><a href="#">
+                        <div class="rank">1</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">FAMOUS</div>
+                            <div class="rank_info_artist">ALLDAY PROJECT</div>
+                        </div>
+                </li>
+                <li><a href="#">
+                        <div class="rank">2</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">Golden</div>
+                            <div class="rank_info_artist">HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">3</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">Dirty Work</div>
+                            <div class="rank_info_artist">aespa</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">4</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">Drowning</div>
+                            <div class="rank_info_artist">WOODZ</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">5</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">시작의 아이</div>
+                            <div class="rank_info_artist">마크툽 (MAKTUB)</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">6</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">너에게 닿기를</div>
+                            <div class="rank_info_artist">10CM</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">7</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">Soda Pop</div>
+                            <div class="rank_info_artist">KPop Demon Hunters </div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">8</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">모르시나요(PROD.로코베리)</div>
+                            <div class="rank_info_artist">조째즈</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">9</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">like JENNIE</div>
+                            <div class="rank_info_artist">제니 (JENNIE)</div>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="rank">10</div>
+                        <div class="rank_info">
+                            <div class="rank_info_title">Whiplash</div>
+                            <div class="rank_info_artist">aespa</div>
+                        </div>
+                    </a>
+                </li>
+                <div class="more_wrap">
+                    <button type="button" class="play_btn"><a href=#>전체듣기</a></button>
+                    <a href="#" class="more"> 더보기 ></a>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+    <footer>
+        <p class="text">YCY TEAM ALL RIGHTS RESERVED</p>
+        <small>&copy;YCY TEAM <br /> 서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F B CLASS</small>
+    </footer>
+    <script src="../../js/song_info.js"></script>
+</body>
+
+</html>
