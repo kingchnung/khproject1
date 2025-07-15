@@ -4,10 +4,6 @@ document.getElementById("search").addEventListener("change", (e) => {
     document.getElementById("search").value = "";
     document.getElementById("search").focus;
 });
-//내비게이션 클릭했을 때 알림
-document.getElementById("nav").addEventListener("click", (e) => {
-    alert("추후 서비스 제공 예정");
-});
 
 //좋아요 눌렀을 때 하트 색깔, 좋아요 갯수 + 1 or 한번 더 누르면 - 1
 document.getElementById("like").addEventListener("click", (e) => {
