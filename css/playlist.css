@@ -65,7 +65,7 @@ h2 {
     margin: 10px 15px;
 }
 
-li button {
+li .unable {
     background-color: #e2e1d993;
     border: 1px solid #c5c3b393;
     border-radius: 10px;
@@ -73,10 +73,15 @@ li button {
     margin: 0 0px 10px 10px;
 }
 
-li button:hover {
+li .unable:hover {
     background-color: #d4d2c793;
     border: 1px solid #58532993;
     color: #58532993;
     font-weight: bold;
 }
 
+#like {
+    border: none;
+    background-color: #e8e8df;
+    margin: 10px 15px;
+}
